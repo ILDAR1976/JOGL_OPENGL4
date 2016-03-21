@@ -1,0 +1,5 @@
+uniform mat4 mgl_PMatrix;
+layout(location = 0) in vec3  mgl_Vertex; 
+void main(void) { 
+  gl_Position = mgl_PMatrix * vec4(mgl_Vertex, 1); 
+} 
